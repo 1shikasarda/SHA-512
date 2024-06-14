@@ -2,9 +2,10 @@
 Secure Hash Algorithm
 
 Aim: Implement following components of SHA-512.
-o Length Field and Padding
-o Majority Function
-o Conditional Function
+
+1. Length Field and Padding
+2. Majority Function
+3. Conditional Function
 
 The Secure Hash Algorithm (SHA) is a standard that was developed by the National Institute
 of Standards and Technology (NIST) and published as a Federal Information Processing
