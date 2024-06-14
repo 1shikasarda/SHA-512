@@ -1,0 +1,19 @@
+import java.util.Scanner; 
+public class Main { 
+    public static int conditional(int x, int y, int z) { 
+        int result = (x != 0 && y != 0) ^ (x == 0 && z != 0) ? 1 : 0; 
+        return result; 
+    } 
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in); 
+        int x, y, z; 
+        System.out.print("Enter the value for x (0 or 1): "); 
+        x = scanner.nextInt(); 
+        System.out.print("Enter the value for y (0 or 1): "); 
+        y = scanner.nextInt(); 
+        System.out.print("Enter the value for z (0 or 1): "); 
+        z = scanner.nextInt(); 
+        int result = conditional(x, y, z); 
+        System.out.println("Conditional function result: " + result); 
+    } 
+}
