@@ -1,0 +1,15 @@
+import java.util.Scanner; 
+public class Main { 
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in); 
+        short original_length; 
+        int padding_bits; 
+        System.out.print("Enter the original message length: "); 
+        original_length = scanner.nextShort(); 
+        padding_bits = (-original_length - 128) % 1024; 
+        if (padding_bits < 0) { 
+            padding_bits += 1024; 
+        } 
+        System.out.println("Padding bits: " + padding_bits); 
+    } 
+} 
